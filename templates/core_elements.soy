@@ -1,0 +1,30 @@
+{namespace annotorious.templates}
+
+/**
+ * A dummy element to be used for annotation popups later on.
+ */
+{template .popup}
+<div class="annotorious-popup top-left" style="position:absolute;z-index:1">
+  <div class="annotorious-popup-buttons">
+    <a class="annotorious-popup-button annotorious-popup-button-edit" title="Edit" href="javascript:void(0);">EDIT</a>
+    <a class="annotorious-popup-button annotorious-popup-button-delete" title="Delete" href="javascript:void(0);">DELETE</a>
+  </div>
+  <span class="annotorious-popup-text"></span>
+</div>
+{/template}
+
+
+/**
+ * A basic annotation edit text form.
+*/
+{template .editform}
+<div class="annotorious-editor" style="position:absolute;z-index:1">
+      <select class="annotorious-selection" tabindex="3">
+          <option value="Select" tabindex="4">Select</option>
+          <option value="Bus" tabindex="5">Bus</option>
+          <option value="Car" tabindex="6">Car</option>
+          <option value="Bike" tabindex="7">Bike</option>
+          <option value="Auto" tabindex="8">Auto</option>
+      </select>
+</div>
+{/template}
