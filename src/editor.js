@@ -50,10 +50,10 @@ annotorious.Editor = function(annotator) {
 
    goog.events.listen(this._dropdown, goog.events.EventType.CHANGE,
           function(e) {
-            console.log('Dropdown selected');
             var value = e.target.value;
               if (self._dropdown.selectedIndex > 0) {
                 var annotation = self.getAnnotation(value);
+                annotation.editable = false;
                 annotator.addAnnotation(annotation);
                 annotator.stopSelection();
                 self._dropdown.selectedIndex = 0; // reset dropdown
@@ -82,11 +82,7 @@ annotorious.Editor.prototype.open = function(opt_annotation, opt_event) {
   this._original_annotation = opt_annotation;
   this._current_annotation = opt_annotation;
 
-  if (opt_annotation)
-    this._textarea.setValue(opt_annotation.text);
-
   goog.style.showElement(this.element, true);
-  this._textarea.getElement().focus();
 
   // Update extra fields (if any)
   goog.array.forEach(this._extraFields, function(field) {
