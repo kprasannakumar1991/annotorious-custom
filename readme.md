@@ -1,29 +1,19 @@
-# Annotorious - Image Annotation for the Web
+# Basic information about Annotorious
 
 Annotorious is an Open Source image annotation toolkit written in JavaScript. Online demos are available
 [on our project Website](http://annotorious.github.io).
 
-## Getting Started
+# My modifications
+Annotorious uses a text-area for the user to add annotations.
+This project is about the use drop-down-menu instead of text-area.
+Kindly add your drop-down options in templates/core_elements.soy, and compile the code
 
-Instructions on getting started using Annotorious on your own Web pages are [on the project Website](http://annotorious.github.io/getting-started.html) or
-[on the Wiki](http://github.com/annotorious/annotorious/wiki/Getting-Started). Instructions on using it as a plugin to the
-[Annotator](http://okfnlabs.org/annotator/) Web annotation system are [here](http://annotorious.github.io/plug-outs/okfn-annotator.html).
-If you require support, get in touch [via our mailing list](http://groups.google.com/d/forum/annotorious).
-
-## Getting Involved
-
-Want to help out? There are many ways you can contribute!
-
-* Using Annotorious? Be sure to give us a shout and let us know your feedback via [our mailing list](http://groups.google.com/group/annotorious).
-* Found a bug? [Drop us a line](http://groups.google.com/group/annotorious) or post an issue on our [issue tracker](http://github.com/annotorious/annotorious/issues).
-* Want to improve our documentation? We'd really appreciate an extra hand [on our Wiki](http://github.com/annotorious/annotorious/wiki)!
-* Missing a feature? [Learn how to develop your own Annotorious Plugins](http://github.com/annotorious/annotorious/wiki/Developing-Plugins).
-* Want to hack on Annotorious? We welcome contributions no matter how small or big!
+# How to compile
+After downloading or cloning this project go to the root folder and run the below command.
+(To run the command java should be first installed in your local machine)
+**$java -jar plovr/plovr.jar build standalone.json > annotorious_dropdown.min.js**
+You can then use the generated annotorious_dropdown.min.js file inside your javascript application.
 
 ## License
-
 Annotorious is licensed under the terms of the [MIT License](http://opensource.org/licenses/MIT). In short: Annotorious is delivered 'as is', and you can feel
 free to use it wherever or however you want. Needless to say: if you fix a bug, or add a cool feature, be sure to give back to the community.
-
-## compiling
-java -jar plovr/plovr.jar build standalone.json > annotorious_dropdown.min.js;
