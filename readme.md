@@ -26,4 +26,4 @@ Annotorious is licensed under the terms of the [MIT License](http://opensource.o
 free to use it wherever or however you want. Needless to say: if you fix a bug, or add a cool feature, be sure to give back to the community.
 
 ## compiling
-java -jar plovr/plovr.jar build standalone.json > annotorious1.min.js;
+java -jar plovr/plovr.jar build standalone.json > annotorious_dropdown.min.js;
