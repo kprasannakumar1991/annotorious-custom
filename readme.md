@@ -5,7 +5,7 @@ Annotorious is an Open Source image annotation toolkit written in JavaScript. On
 
 # My modifications
 Annotorious library uses a text-area for the user to add annotations.
-This project uses drop-down-menu(<select>) instead of text-area.
+This project uses drop-down-menu instead of text-area.
 Kindly add your drop-down options in templates/core_elements.soy, and compile the code
 
 # How to compile
