@@ -9,10 +9,10 @@ This project uses drop-down-menu(<select>) instead of text-area.
 Kindly add your drop-down options in templates/core_elements.soy, and compile the code
 
 # How to compile
+*(Java should be installed in your local machine)*
 After downloading or cloning this project go to the root folder and run the below command.
-*(To run the command java should be first installed in your local machine)*
 **$java -jar plovr/plovr.jar build standalone.json > annotorious_dropdown.min.js**
-You can then use the generated **annotorious_dropdown.min.js** file inside your javascript application.
+You can then use the generated ***annotorious_dropdown.min.js*** file inside your javascript application.
 
 ## License
 Annotorious is licensed under the terms of the [MIT License](http://opensource.org/licenses/MIT). In short: Annotorious is delivered 'as is', and you can feel
